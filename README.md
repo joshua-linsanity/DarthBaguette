@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @DarthBaguette
-- 👀 I’m interested in Python, C++, and C# through Unity. I like number theory and cryptography, as well as Machine Learning and data science
-- 🌱 I’m currently learning to build C# projects in Unity
-- 💞️ I’m looking to collaborate on nothing yet!
-- 📫 How to reach me: I'm a very private person
+- 👀 I’m interested in Python and Unity projects. I like number theory and cryptography, as well as Machine Learning and data science
+- 🌱 I’m currently learning to script C# for Unity projects
+- 💞️ I’m not looking to collaborate yet, but maybe in the future!
+- 📫 How to reach me: through LinkedIn
 
 <!---
 DarthBaguette/DarthBaguette is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
