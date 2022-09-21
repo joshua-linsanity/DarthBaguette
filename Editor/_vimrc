@@ -1,0 +1,42 @@
+" Treat wrapped line as true line (movement keys)
+nnoremap j gj
+nnoremap k gk
+
+" Horizontal scroll
+map <C-L> 5zl " Scroll 5 characters to the right
+map <C-H> 5zh " Scroll 5 characters to the left
+
+" Syntax highlighting on
+syntax on
+
+" Tab
+set tabstop=4
+set softtabstop=4
+
+" Highlight search results
+set incsearch
+set hlsearch
+
+" Line numbering
+set number
+
+" No word wrap
+set nowrap
+
+" Stop annoying bell sounds
+set belloff=all
+
+" call plug#begin('$HOME/autoload/')
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes
+
+" Initialize plugin system
+" call plug#end()
+
