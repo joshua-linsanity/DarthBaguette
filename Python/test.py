@@ -1,15 +1,10 @@
-from numpy import *
+import numpy as np
+import sympy as sp
+import scipy.integrate as integrate
 from scipy.constants import *
-from sympy import symbols, solve
 
-x = 6.20E-2
-E = -6.60E5
-
-a = elementary_charge * E / proton_mass
-print(f"Acceleration: {a:.2E} m/s^2")
-
-v_0 = sqrt(-2*a*x)
-print(f"Initial velocity: {v_0:.2E} m/s")
-
-t = v_0 / a
-print(f"Time: {abs(t)} m/s")
+k = 5.55E3
+E = lambda x: k * x**2
+x = 0.310
+ρ = epsilon_0 * 2 * k * x
+print(f"Charge density: {ρ:.2E}")
