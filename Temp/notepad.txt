@@ -1,31 +1,22 @@
-import java.util.Scanner;
+Which days of the week do most people access studentaid.gov? (To avoid the days when the website is slowest)
 
-class activity2
-{
-	// INITIALIZE
-	int n = 4; // number of names
-	Scanner scan = new Scanner(System.in);
-	String[] names = new String[n];
+Are there any downsides to using the IRS Data Retrieval Tool?
 
-	System.out.println(String.format("Please enter %d names:", n));
+What if we have more than 10 colleges on our list?
 
-	// GET INPUTS
-	for (int i = 0; i < n; i+++)
-	{
-		names[i] = scan.nextLine();
-	}
+SPECIAL CIRCUMSTANCE REVIEW--report changes in income
+W2 is not absolutely required
 
-	// SWAP FIRST LAST
-	String temp = names[0];
-	names[0] = names[n - 1];
-	names[n - 1] = temp;
+Is the FAFSA first-come first-serve? (That is, could you clarify when we should submit it to maximize aid--early like this month, or late like next year?)
 
-	// PRINT OUTPUT
-	String s = "";
-	for (int j = 0; j < n; j++)
-	{
-		s += names[j] + " ";
-	}
+Should we fill out CSS as soon as possible too? --> Only fill out CSS if school instructs you to do so (check website)
 
-	System.out.print(String.format("\n%s", s));
-}
+Student Aid Report (SAR)--summary of student responses, mailed 3-5 days after
+
+Satisfactory Academic Progress (SAP) standards--lose financial aid if low GPA
+
+Pell Grant, Supplemental Education Opportunity Grant (SEOG), Federal work study
+
+pnc.com/scholarship
+
+FAFSA Assets from 2 years ago
