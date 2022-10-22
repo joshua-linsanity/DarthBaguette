@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Proof of Lorentz Transformation}
+\author{Sad Baguette}
+\date{}
+
+\begin{document}
+\maketitle
+Let us orient our axes S and S', the latter of which is moving at velocity $\vec{u} = u\hat{i}$ so that there is only motion along the x-axes. Also, when the origins coincide, let $t=t'=0$, and assume that spacetime is homogenous. Let us write: 
+\[ x' = a_{11}x + a_{12}y + a_{13}z + a_{14}t \; \; ...(1)\]
+\[ y' = a_{21}x + a_{22}y + a_{23}z + a_{24}t \; \; ...(2)\] 
+\[ z' = a_{31}x + a_{32}y + a_{33}z + a_{34}t \; \; ...(3)\] 
+\[ t' = a_{41}x + a_{42}y + a_{43}z + a_{44}t \; \; ...(4)\] 
+There are only linear terms of $x$, $y$, $z$, and $t$ because anything else would violate the homogeneity argument, meaning that a change in a primed parameter could be dependent on where the change occurs in space or time. \bigskip
+
+Since there is no relative motion in the $y$ or $z$ directions, they are identical: that is, 
+\[ a_{21} = a_{23} = a_{24} = a_{31} = a_{32} = a_{34} = 0 \] 
+\[ a_{22} = a_{33} = a_{44} = 1 \] 
+\bigskip
+so we have
+\[ x' = a_{11}x + a_{12}y + a_{13}z + a_{14}t \]
+\[ y' = y \] 
+\[ z' = z \] 
+\[ t' = a_{41}x + a_{42}y + a_{43}z + a_{44}t \] \bigskip
+
+Then, by symmetry, we assume that $t'$ does not depend on $y$ and $z$. Otherwise, clocks moving parallel to each other in S would measure time differently (which violates homogeneity). Thus, 
+\[ a_{42} = a_{43} = 0 \] 
+and we have simplified equations (1) and (4) into 
+\[ x' = a_{11}x + a_{12}y + a_{13}z + a_{14}t \]
+\[ t' = a_{41}x + a_{44}t \]
+However, we also know that having a coordinate $x'=0$ is identical to having coordinate $x=ut$. Substituting this into the $x'$ relation, we obtain 
+\[ 0 = a_{11}(ut) + a_{12}y + a_{13}z + a_{14}t \] 
+This condition must hold true in all cases, so $a_{12}=a_{13}=0$ and $ua_{11} = -a_{14}$. So, our relations become
+\[ x' = a_{11}(x - ut) \] 
+\[ t' = a_{41}x + a_{44}t \] 
+\bigskip
+
+Now, suppose that when the two coordinate systems overlapped at time 0, we released a spherical wave of light. Its coordinates are given by
+\[ c^2 t^2 = x^2 + y^2 + z^2 \] 
+\[ c^2 t'^2 = x'^2 + y'^2 + z'^2 \] 
+Substituting the primed relations into these relations, we obtain
+\[ c^2 (a_{41}x + a_{44}t)^2 = [a_{11}(x - ut)]^2 + y^2 + z^2 \] 
+which rearranges into 
+\[ (a_{11}^2 - c^2 a_{41}^2)x^2 + y^2 + z^2 - 2(ua_{11}^2 + c^2 a_{41}a_{44})xt = (c^2 a_{44}^2 - u^2 a_{11}^2)t^2 \] 
+This must agree with the first spherical wave equation, so we have
+\[ a_{11}^2 - c^2 a_{41}^2 = 1 \] 
+\[ ua_{11}^2 + c^2 a_{41}a_{44} = 0 \] 
+\[ c^2 a_{44}^2 - u^2 a_{11}^2 = c^2 \] 
+At long last, with three equations and three unknowns, we can solve for the Lorentz transform: 
+\[ x' = \frac{x - ut}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma (x - ut)\] 
+\[ y' = y \] 
+\[ z' = z \] 
+\[ t' = \frac{t - \frac{ux}{c^2}}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma \left(t - \frac{ux}{c^2} \right) \] 
+
+
+
+
+\end{document}

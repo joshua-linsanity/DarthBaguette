@@ -1,0 +1,52 @@
+\documentclass[../PhysicsFormulae.tex]{subfiles}
+
+\begin{document}
+\subsection{Conservative Forces}
+A conservative force is defined in two (equivalent) ways. First, work done on a particle as it moves around a closed path (initial and final positions are the same) is 0. 
+\[ \oint \vec{F} \cdot \,d\vec{s} = \int_a^b \vec{F} \cdot \,d\vec{s} + \int_b^a \vec{F} \cdot \,d\vec{s} = 0 \]
+Second, the work done on a particle is independent of the path it takes.
+\[ \int_1 \vec{F} \cdot \,d\vec{s} = \int_2 \vec{F} \cdot \,d\vec{s} \]
+
+\subsection{Potential Energy}
+All conservative forces have associated potential energy functions defined for them, representing the work needed to assemble a \textit{system} (so objects don't gain PE, systems do!). 
+\[ \Delta U = -W = - \int F \,dx \rightarrow U(x) = U(x_0) - \int_{x_0}^{x} F(x) \,dx \]
+which implies
+\[ F = - \frac{dU}{dx} \]
+Notice that it's \textit{differences} in potential energy that matter. \bigskip
+
+For gravitational potential energy, we define $ U(\infty) = 0 $. Thus, the GPE of a system is given by
+\[ U(x) = 0 - \int_{\infty}^{x} -\frac{GMm}{x^2} \,dx = -\frac{GMm}{x} \]
+where $x$ is the separation between two gravitationally interacting bodies. 
+
+\subsection{Conservation of Mechanical Energy}
+If no external forces do work on a system, mechanical energy is conserved, given by
+\[ \Delta K + \Delta U = \Delta E_{tot} = 0 \]
+where the kinetic energy term represents both translation and rotation, given by
+\[ K = \frac{1}{2}Mv^2 + \frac{1}{2}I_{cm}\omega^2 \] 
+For rolling without slipping, this becomes 
+\[ K = \frac{1}{2}Mv^2 + \frac{1}{2}(cMR^2)\omega^2 = \frac{1}{2}(c+1)Mv^2 \]
+In 1D conservative systems, solving for velocity in conservation of energy yields
+\[ v_x = \pm \sqrt{\frac{2}{m} [E-U(x)]} \]
+where points at which $v=0$ are called \textit{turning points}. 
+
+\subsection{Types of Equilibrium}
+\textit{Stable} equilibrium occurs when force opposes small displacements (restoring force). This occurs at relative minima on the potential energy function.\\
+\textit{Unstable} equilibrium occurs when force supports small displacements. This occurs at relative maxima on the potential energy function. \\
+\textit{Neutral} equilibrium occurs when there is no force in either direction for small displacements. This occurs in horizontal regions of the potential energy function.
+
+\subsection{General Position Function}
+Integrating $v=\frac{dx}{dt}$ with the value for $v$ derived above, we obtain
+\[ t = \int_{x_0}^{x} \frac{1}{\pm \sqrt{\frac{2}{m}[E-U(x)]}} \,dx \]
+
+\subsection{3D Conservative Systems}
+Generalizing our previous result to three dimensions, for position vector $\vec{s}=x\hat{i}+y\hat{j}+z\hat{k}$ and $\vec{F}=F_x\hat{i}+F_y\hat{j}+F_z\hat{k}$, we have
+\[ \Delta U = U(x_f, y_f, z_f) - U(x_i, y_i, z_i) = -\int_i^f (F_x\,dx + F_y\,dy+F_z\,dz) \]
+which implies
+\[ \vec{F} = -\frac{\partial U}{\partial x}\hat{i} - \frac{\partial U}{\partial y}\hat{j} - \frac{\partial U}{\partial z}\hat{k} \]
+
+\subsection{Gravitational Potential}
+Gravitational potential energy is always between a system of masses, but suppose we want to know the effect of one mass on the space around it. This is where the concept of gravitational \textit{potential} comes in handy,
+\[ V = \frac{U}{m} \]
+It is the gravitational parallel of electric potential. 
+
+\end{document}

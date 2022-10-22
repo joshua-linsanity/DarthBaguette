@@ -1,0 +1,40 @@
+\documentclass[../PhysicsFormulae.tex]{subfiles}
+\begin{document}
+
+\subsection{Flux and Lines of Field}
+Electric flux through a closed surface is always 0 unless there are sources of charge within the surface. In other words, Gauss' Law can be applied to closed surfaces even if there are external fields present. 
+
+\subsection{Gauss' Law}
+If we construct a \textit{Gaussian surface} through space, Gauss' Law states that
+\[ \oint \vec{E} \cdot d\vec{A} = \frac{q}{\epsilon_0} \]
+Or, in differential form, 
+\[ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} \]
+Notice that if a sphere is chosen as the Gaussian surface around a point charge $q$, Gauss' Law reduces to Coulomb's Law. 
+
+\subsection{Applications of Guass' Law}
+For an infinite line of charge, 
+\[ E = \frac{\lambda}{2\pi \epsilon_0 r} \]
+For an infinite plane of charge, 
+\[ E = \frac{\sigma}{2\epsilon_0} \]
+
+\subsection{Shell Theorems}
+From Gauss' Law, two shell theorems can be deduced: 
+\begin{enumerate}
+	\itemsep0em
+	\item A uniform spherical shell of charge has no electric field in its interior. 
+	\item A uniform spherical shell of charge has an electric field in its exterior that behaves as if all the charge were concentrated at its center. 
+\end{enumerate}
+A result of this is that within a uniform sphere of charge, which can be thought of as a succession of shells, 
+\[ E = \frac{1}{4\pi \epsilon_0} \frac{qr}{R^3} \]
+
+\subsection{Gauss' Law and Conductors}
+If charges were placed arbitrarily on a conductor, they would all redistribute themselves on its outer surface. This is because charges tend towards electrostatic equilibrium; if the interior had an electric field, the conduction electrons would experience a force and current would be observed. (Consider a uniform sphere of charge: because $E \neq 0$ inside the conductor, charges inside would not be at equilibrium.) Alternatively, equilibrium minimizes the potential energy of the charges. 
+
+\subsection{Charge on Interior Surfaces}
+Suppose a conductor has a cavity inside of it, creating an ``outer'' surface on its interior. Does charge also move to that surface? Gauss' Law tells us no, because then there would be an electric field in the rest of the conductor's interior. \bigskip
+
+If some charge is magically moved inside the cavity, what happens? Again, because there cannot be electric field in the conductor's interior, charges will shift from the outermost surface to the interior surface---just enough to neutralize the electric flux. 
+
+
+
+\end{document}

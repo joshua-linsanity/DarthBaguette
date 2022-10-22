@@ -1,0 +1,139 @@
+\documentclass[../PhysicsFormulae.tex]{subfiles}
+\begin{document}
+Sound waves usually refer to the frequency range between 20 Hz and 20,000 Hz, the typical ranges of human hearing. 
+
+\subsection{Traveling Sound Waves}
+A simple way to generate sound waves is to have a piston compress and rareify the air in front of it. 
+\[ \Delta \rho (x,t) = \Delta \rho_m \sin(kx - \omega t) \]
+\[ \Delta p (x,t) = \Delta p_m \sin(kx - \omega t) \]
+We can relate these equations with 
+\[ \Delta \rho_m = \rho_0 \frac{\Delta p_m}{B} \]
+where $B$ is the bulk modulus. \bigskip
+
+Note that internal energy increases due to particle motion caused by sound. In fluids, this energy flows rather slowly, so it is approximately $adiabatic$ (no heat transfer). If energy does flow non-negligibly, it is $isothermal$ (constant temperature). The appropriate bulk modulus must be used in each case. 
+
+\subsection{Displacement from Sound Waves}
+Expressing sound as a displacement wave results in 
+\[ s(x,t) = s_m \cos(kx - \omega t) \]
+where 
+\[ s_m = \frac{\Delta \rho_m}{k \rho_0} = \frac{\Delta p_m}{kB} \]
+Thus, the longitudinal velocity of particles is given by 
+\[ u(x,t) = \frac{\partial s}{\partial t} = u_m \cos(kx - \omega t) \]
+where
+\[ u_m = \omega s_m = \frac{\omega \Delta \rho_m}{k\rho_0} = \frac{\omega \Delta p_m}{kB} \]
+It is generally preferable to describe sound waves with pressure functions rather than displacement functions. Differences arise because pressure adds as scalars while displacement as vectors. Also, pressure changes are what're detected by ears and microphones. 
+
+\subsection{The Speed of Sound}
+The speed of sound in a medium is given by 
+\[ v = \sqrt{\frac{B}{\rho_0}} \]
+In gases, the Bulk modulus can be written as 
+\[ B = \gamma p_0 \]
+where $\gamma$ is the specific heat ratio. For air, $\gamma = 1.4$ and $\rho_0 = 1.21 \; kg/m^3$. \bigskip
+
+In air, the speed of sound as a function of temperature is given by
+\[ v = 331 + 0.6T \; m/s \] 
+and under typical conditions (room temperature), $v = 343 \; m/s$. 
+
+\subsection{Power and Intensity of Sound Waves}
+The power of a sound wave is given by 
+\[ P = \frac{Av(\Delta p_m)^2}{B}\sin^2(kx - \omega t) \]
+and so the average power over a large number of cycles is
+\[ P_{av} = \frac{Av(\Delta p_m)^2}{2B} = \frac{A(\Delta p_m)^2}{2\rho v} \]
+which means that 
+\[ P_{av} \propto (\Delta p_m)^2 \propto f^2s_m^2 \] \bigskip
+
+Intensity is given by
+\[ I = \frac{(\Delta p_m)^2}{2\rho v} = 2\pi^2 \rho v f^2 s_m^2 \]
+In terms of intensity, we have
+\[ \Delta p_m = \sqrt{2I\rho v} \]
+\[ s_m = \sqrt{\frac{I}{2\pi^2\rho f^2 v}} \] 
+
+Human ears respond logarithmically to sound of increasing intensity, so it makes sense to define \textit{sound level} as 
+\[ \beta = 10\log{\frac{I}{I_0}} \]
+where the reference intensity is $I_0 = 10^{-12} \; W$ (for midrange frequencies of about 1000 Hz). Relatively, we can also write
+\[ \beta_2 - \beta_1 = 10\log{\frac{I_2}{I_1}} \]
+The threshold of pain is around 120 dB. I find this very... interesting.
+
+
+\subsection{Interference of Sound Waves}
+Two sound waves interfering at a point follow the principle of superposition, so their pressure disturbances add. The type of interfereence depends on the phase difference, given by
+\[ \frac{\Delta \phi}{2\pi} = \frac{\Delta L}{\lambda} \]
+where the path difference is $\Delta L = |r_1 - r_2|$. \bigskip
+
+Therefore, constructive interference (maximum intensity) occurs at
+\[ \Delta L = m\lambda \]
+where $m = 0, \; 1, \; 2, \; \dots$. \bigskip
+
+And thus destructive interference (minimum intensity) occurs at 
+\[ \Delta L = \left(m + \frac{1}{2}\right)\lambda \]
+where $m = 0, \; 1, \; 2, \; \dots$. \bigskip
+
+If speakers emit a mixture of many different wavelengths (real music consists of many!), some points could have destructive interference for one wavelength bubt constructive interference for another. 
+
+\subsection{Standing Longitudinal Waves}
+Standing waves occur when sound either reflects off of an open or closed end. 
+\begin{itemize}
+    \item If the end of the tube is open, there is a rarefaction (pressure node) as there is nothing for air to bounce off of. There is thus a $180^{\circ}$ change in phase. 
+    \item If the end of the tube is closed, there is a compression (pressure antinode) as air bounces off the wall. Thus, there is no change in phase.
+\end{itemize}
+For a open-open tube, each loop is $\lambda/2$, so we can solve for wavelength as 
+\[ \lambda_n = \frac{2L}{n} \]
+so frequency is given by 
+\[ f_n = \frac{nv}{2L} \]
+where $n = \;1,\;2,\;3\;...$ \\
+For an open-closed tube, each half-loop is $\lambda/4$, so we can solve for wavelength as 
+\[ \lambda_n = \frac{4L}{n} \]
+so frequency is given by 
+\[ f_n = \frac{nv}{4L} \]
+where $n = 1,\;3,\;5\;...$
+
+\subsection{Vibrating Systems}
+There are a large (maybe infinite!) number of ways that a distributed system like air can vibrate. Suppose it's able to vibrate at frequencies 
+\[ f_1, \; f_2, \; f_3 \; ... \]
+in ascending order. The lowest frequency is known as the \textit{fundamental} and the subsequent ones are known as \textit{overtones}, with the second frequency being the first overtone. \bigskip
+
+When the overtones are integer multiples of the fundamental, 
+\[ f_n = nf_1 \]
+then they are known as \textit{harmonics}, with the fundamental being the first harmonic. \bigskip
+
+In an open-open tube, the relation between overtones and harmonics is given by
+\[ H = O + 1 \]
+and in an open-closed tube, the relation is given by
+\[ H = 2O +1 \]
+because open-closed tubes can only handle odd harmonics. 
+
+\subsection{Beats}
+When two sounds have nearly the same frequency, they take on a simple form. Consider two sound waves with identical pressure amplitude at constant $x$, given by
+\[ \Delta p_1(t) = \Delta p_m \sin{\omega_1 t} \]
+\[ \Delta p_2(t) = \Delta p_m \sin{\omega_2 t} \]
+so their resultant is given by 
+\[ \Delta p(t) = \left[2\Delta p_m \cos{\left(\frac{\omega_1 - \omega_2}{2}\right)t}\right] \sin{\left(\frac{\omega_1 + \omega_2}{2}\right)t} \]
+The first factor is the 'amplitude' of the envelope that contains the sinusoidal variation of the second factor, so we can rewrite this as 
+\[ \Delta p(t) = [2\Delta p_m \cos{\omega_{amp}t}] \sin{\omega_{av}t} \]
+When the two frequencies are close, $\omega_{amp}$ is small and the amplitude fluctuates slowly. Also, the rapid fluctuation within the envelope is approximately that of either individual wave. \bigskip
+
+Maximum intensity occurs twice in an envelope, when $\cos{\omega_{amp}t} = \pm 1$. Thus, we can define
+\[ \omega_{beat} = 2\omega_{amp} = |\omega_1 - \omega_2| \]
+or in terms of frequency, 
+\[ f_{beat} = |f_1 - f_2| \]
+
+\subsection{Doppler Effect}
+When an observer moves, she hears more/less wavelengths in some time, so we have
+\[ f' = \frac{v \pm v_o}{v}f \]
+where positive implies observer going towards source, and negative implies away.\bigskip
+
+When a source moves, the observer hears shortened/elongated wavelengths, so we have
+\[ f' = \frac{v}{v \mp v_s}f \]
+where negative implies source going towards observer, and negative implies away.\bigskip
+
+Thus, combining them, if both the source and observer are moving: 
+\[ f' = \frac{v \pm v_o}{v \mp v_s}f \]
+Note that for reflected waves, the 'observer' becomes the 'source' after reflection, so there may be two Doppler shifts. Also, all speeds must be taken with respect to the medium: Doppler shift must be analyzed in the frame in which the medium is at rest. 
+
+\subsubsection{Effects at High Speeds}
+When $v_o$ or $v_s$ become comparable to $v$, the prior formulae may not apply because the restoring force of air may not be proportional to displacement anymore in the medium, among many other complications.\bigskip
+
+Ultimately, when the source moves faster than the phase speed of the wave in that medium, a \textit{Mach cone} is formed, with angle given by 
+\[ \sin{\theta} = \frac{v}{v_s} = \frac{1}{M} \]
+where $M = v_s/v$ is the Mach number. Note that $v_s$ is the speed of the source, not of sound. And a sonic boom comes from the Mach cone hitting a surface, not from directly breaking the sound barrier. 
+\end{document}

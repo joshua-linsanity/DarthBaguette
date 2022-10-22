@@ -1,0 +1,188 @@
+\documentclass[../PhysicsFormulae.tex]{subfiles}
+\begin{document}
+
+\subsection{Heat Transfer}
+Heat is defined as energy that flows from one system to another due to a temperature difference between them. It is a transfer of energy, not a state function, and there are three mechanisms through which it occurs. 
+
+\subsubsection{Conduction}
+Thermal conduction is heat transfer through physical contact. On the molecular level, when atoms are in contact, they are able to transfer their higher kinetic energies to those nearby with lower energies. \bigskip
+
+Consider a rectangular slab of concrete, which has one face at temperature $T + \Delta T$ and another at $T$. Empirically, the heat transfer is 
+\begin{enumerate}
+    \item $\propto A$. More area means more atoms can transfer their higher kinetic energies across the slab. 
+    \item $\propto 1/\Delta x$. More separation means that it takes longer (more collisions) for atoms to transfer their higher kinetic energies across the slab. 
+    \item $\propto \Delta T$. More temperature differential means that each atom has more kinetic energy to transfer.
+\end{enumerate}
+In summary, we can write the heat as 
+\[ H = kA\frac{\Delta T}{\Delta x} \] 
+in which $k$ is the \textit{thermal conductivity} of the material, in units of $\mathrm{W/m \cdot K}$. Oftentimes, materials are also rated by their \textit{thermal resistance} or \textit{R-value}, defined as 
+\[ R = \frac{L}{k} \] 
+where L is the thickness. In terms of the temperature gradient, we can rewrite
+\[ H = -kA\frac{dT}{dx} \] 
+where $x$ is defined positive in the direction of heat flow, and the negative is present to keep $H$ positive. And for materials in series with the same cross sectional area, we can write 
+\[ H = \frac{A\Delta T}{\Sigma R_n} \] 
+because the heat flow through the two materials and the temperature at their boundary must be the same. 
+
+\subsubsection{Convection}
+Convection occurs when a fluid is in contact with an object of higher temperature. Portions of the fluid near the object heat up and thus expand (in most cases), so they become less dense and rise.
+
+\subsubsection{Radiation}
+Radiation, which is composed of electromagnetic waves, is emitted by all objects due to their temperature (and absorbed as well). 
+
+\subsection{First Law of Thermodynamics}
+The first law is expressed as, 
+\[ Q + W = \Delta E_{int} \] 
+where $W$ is mechanical work (done on the system). Thermodynamic work would see $W$ replaced with $-W$. Generally, this assumes that the system only contains internal energy; if changes in kinetic, potential, or other forms of energy took place, they would need to be included on the RHS. \bigskip
+
+Consider a process connecting the initial and final equilibrium states, $i$ and $f$. While $Q$ and $W$ may differ, experiment shows that $\Delta E_{int}$ remains the same no matter what. This means that internal energy is a \textit{state function}. 
+
+\subsection{Heat Capacity and Specific Heats}
+An object's temperature increases as heat is transferred to it. However, different materials and different conditions affect the relationship between $\Delta T$ and $Q$, which we measure as \textit{heat capacity}:
+\[ C = \frac{Q}{\Delta T} \]
+And the heat capacity per unit mass of the body is the \textit{specific heat capacity} is given by 
+\[ c = \frac{Q}{m \Delta T} \]
+While heat capacity is a property of an object, specific heat capacity is a property of a substance. Both are dependent on temperature and pressure, so to find the amount of heat necessary to change from one temperature to another, we would need to valuate
+\[ Q = \sum_{n=1}^{N}mc_n \Delta T_n = m \int_{T_i}^{T_f} c \; dT \]
+Note that in order to properly define $c$, we must specify how the heat is added, such as at constant pressure ($c_v$), constant pressure ($c_p$), or otherwise.
+
+\subsubsection{Heats of Transformation}
+When a substance is at a phase change temperature, adding or removing heat may not cause a temperature change. Instead, the heat goes towards transforming it from one phase to another, related by 
+\[ Q = Lm \]
+where $L$ is known as the \textit{heat of fusion} for solid-liquid changes and \textit{heat of vaporization} for liquid-gas changes, with the latter being generally higher. More broadly, they are referred to as the \textit{heats of transformation} or \textit{latent heats}.
+
+\subsubsection{Heat Capacities of Solids}
+If we multiply specific heat $c$ by the molar mass $M$, we obtain the molar heat capacity, 
+\[ C = \frac{Q}{n\Delta T} \] 
+Dulong and Petit first noticed that nearly all solids have molar heat capacities close to $25 \; \mathrm{J/mol \cdot K}$. This is because we are in effect measuring the heat capacity per atom, which should be approximately the same even for different materials. However, other factors such as temperature and pressure affect molar heat capacity, so the Dulong-Petit value is only approached by high temperatures.
+
+\subsection{Work Done by an Ideal Gas}
+Consider a piston of area $A$ moving upwards in a container full of ideal gas. The force is opposite the direction of motion (downwards), so the work done \textit{on} the gas is negative: 
+\[ W = \int -pA \; dx = \int -p \; dV \]
+Thus we often plot pressure-volume ($pV$) diagrams to analyze the work, where the negative of the area under the curve is the work done. Note that it does depend on the path taken. For closed processes, the magnitude of net work done on the gas is the enclosed area, and the sign is given by something like a right-hand rule.
+
+\subsubsection{Work Done at Constant Volume}
+At constant volume, $\Delta V = 0$ so no work is done. 
+
+\subsubsection{Work Done at Constant Pressure}
+At constant pressure, 
+\[ W = -p\int_{V_i}^{V_f} \; dV = -p (V_f - V_i) \] 
+
+\subsubsection{Work Done at Constant Temperature}
+At constant temperature, 
+\[ W = -\int_{V_i}^{V_f} \frac{nRT}{V} \; dV = - nRT \ln{\frac{V_f}{V_i}} \]
+This is known as \textit{isothermal} and the curve on a $pV$ diagram is known as an \textit{isotherm}. 
+
+\subsubsection{Work Done in Thermal Isolation}
+An adiabatic process is defined to be a process in thermal isolation, and its path follows a curve 
+\[ pV^{\gamma} = \mathrm{constant} \]
+where $\gamma > 1$ is the dimensionless \textit{ratio of specific heats}, so an adiabatic curve is steeper than an isothermal curve where they intersect. \bigskip
+
+By substituting $p = p_i V_i^{\gamma} /V^{\gamma}$ and integrating, adiabatic work can be expressed as 
+\[ W = \frac{p_i V_i}{\gamma - 1} \left[ \left(\frac{V_i}{V_f}\right)^{\gamma - 1} - 1 \right] = \frac{1}{\gamma - 1} (p_f V_f - p_i V_i) \]
+
+\subsubsection{Bulk Modulus for Adiabatic Process}
+In the differential limit, 
+\[ B = -V\frac{dp}{dV} \]
+By taking the differential of $pV^{\gamma} = \mathrm{constant}$, it can be shown that 
+\[ B = \gamma p \]
+And, since the speed of sound in such a gas is
+\[ v = \frac{B}{\rho} = \frac{\gamma RT}{M} \]
+
+\subsection{Internal Energy of an Ideal Gas}
+The \textit{degrees of freedom} of a molecule is how many ways it can absorb energy; for instance, a diatomic gas has 5 d.o.f. since its energy is 
+\[ K = \frac{1}{2}mv_x^2 + \frac{1}{2}mv_y^2 + \frac{1}{2}mv_z^2 + \frac{1}{2} I\omega_x^2 + \frac{1}{2} I \omega_y^2 \]
+
+Maxwell's \textit{equipartition of energy theorem} then states that each degree of freedom yields an average energy per particle of $\frac{1}{2}kT$ when the number of molecules is large. Therefore, for a gas with $N$ molecules,
+\[ E_{int} = \frac{3}{2}NkT = \frac{3}{2}nRT \;\; (\mathrm{monatomic}) \]
+\[ E_{int} = \frac{5}{2}NkT = \frac{5}{2}nRT \;\; (\mathrm{diatomic}) \]
+\[ E_{int} = \frac{6}{2}NkT = 3nRT \; \; (\mathrm{polyatomic}) \]
+A corollary of the theorem is thus that internal energy only depends on temperature. 
+
+\subsubsection{Molar Heat Capacity of Solids}
+In solids, atoms are stuck in a lattice can thus can oscillate with kinetic energy in three d.o.f., but they also have intermolecular interactions with potential energy in three more d.o.f., for a total of 6 d.o.f. Thus, since a solid does not do work, 
+\[ Q = \Delta E_{int} = 3 nR\Delta T \]
+The molar heat capacity is 
+\[ C = \frac{Q}{n \Delta T} = 3R \]
+Note that $C \approx 25 \; \mathrm{J/mol \cdot K}$ is the Dulong-Petit value!
+
+\subsection{Heat Capacities of an Ideal Gas}
+The measured heat capacity of a substance depends on how the heat is added to it. Let us analyze some common cases.
+
+\subsubsection{Molar Heat Capacity at Constant Volume}
+There is no work done at constant volume, so
+\[ C_V = \frac{Q}{n \Delta T} = \frac{f}{2} \]
+where $f$ is the number of degrees of freedom. Therefore, 
+\begin{enumerate}
+    \item Monatomic: $C_V = 3/2 R = 12.5 \; \mathrm{J/mol \cdot K}$
+    \item Diatomic: $C_V = 5/2 R = 20.8 \; \mathrm{J/mol \cdot K}$
+    \item Polyatomic: $C_V = 3 R = 24.9 \; \mathrm{J/mol \cdot K}$ 
+\end{enumerate}
+
+\subsubsection{Molar Heat Capacity at Constant Pressure}
+At constant pressure, 
+\[ Q = \Delta E_{int} - W = \frac{f}{2}nR\Delta T + p\Delta V = \frac{f + 2}{2}nR\Delta T \]
+which implies
+\[ C_p = \frac{Q}{n \Delta T} = \frac{f + 2}{2} R \]
+Therefore, 
+\begin{enumerate}
+    \item Monatomic: $C_p = \frac{5}{2}R = 20.8 \; \mathrm{J/mol \cdot K}$
+    \item Diatomic: $C_p = \frac{7}{2}R = 29.1 \; \mathrm{J/mol \cdot K}$
+    \item Monatomic: $C_p = 4R = 33.3 \; \mathrm{J/mol \cdot K}$
+\end{enumerate}
+
+\subsubsection{Ratio of Specific Heats}
+The ratio of molar heat capacities is defined as 
+\[ \gamma = \frac{C_p}{C_V} = \frac{f + 2}{f} \]
+But this is equivalent to the ratio of specific heats (or specific heat ratio) because $C$ and $c$ are related by a factor of $M$ only. Therefore, 
+\begin{enumerate}
+    \item Monatomic: $\gamma = \frac{5}{3} = 1.67$
+    \item Diatomic: $\gamma = \frac{7}{5} = 1.4$
+    \item Polyatomic: $\gamma = \frac{8}{6} = 1.33$
+\end{enumerate}
+
+\subsection{Applications of the First Law of Thermodynamics}
+\subsubsection{Adiabatic Processes}
+Here we will show that $pV^{\gamma}$ is constant for adiabatic processes. Our goal is to obtain an integratable equation involving $dp$ and $dV$. \bigskip 
+
+\textbf{Finding dV:}
+
+Assuming that the process is carried out slowly (so pressure is well-defined and volume is constant), 
+\[ pdV = -dW = -dE_{int} = -nC_V dT \]
+
+\textbf{Finding dV:}
+And taking a differential of $pV = nRT$ yields 
+\[ Vdp = nRdT - pdV = nRdT + dW = nC_p dT \]
+
+\textbf{Solving:}
+Combining the results yields 
+\[ \frac{Vdp}{pdV} = -\frac{C_p}{C_V} = -\gamma \]
+Integrating, 
+\[ p_i V_i^{\gamma} = p_f V_f^{\gamma} \]
+But i and f are arbitrarily chosen, so we can rewrite as 
+\[ pV^{\gamma} = \mathrm{constant} \]
+\bigskip 
+
+We can also rewrite in terms of \textbf{temperature}:
+\[ p_i V_i (V_i)^{\gamma - 1} = p_f V_f^{\gamma - 1} \]
+Using the ideal gas law and solving, 
+\[ T V^{\gamma - 1} = \mathrm{constant} \]
+
+\subsubsection{Isothermal Processes}
+In isothermal (constant temperature) processes, 
+\[ Q + W = 0 \]
+
+\subsubsection{Isometric Processes}
+In isometric (constant volume) processes, 
+\[ Q = \Delta E_{int} \]
+
+\subsubsection{Cyclical Processes}
+In cyclical (same initial and final state) processes, 
+\[ Q + W = 0 \]
+because internal energy is a state function. 
+
+\subsubsection{Free Expansion}
+Consider a thermally isolated container divided in two halves, one of which contains gas. When the barrier between the halves is dropped, the gas will expand to fill the entire container, given by 
+\[ Q = W = \Delta E_{int} = 0 \]
+This is a \textit{non-equilibrium process}: while the initial and final states have well-defined pressures and volumes (and thus temperatures), intermediate states do not. Thus, we cannot plot the entire process on a $pV$ diagram. 
+
+\end{document}

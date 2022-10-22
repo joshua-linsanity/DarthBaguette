@@ -1,0 +1,70 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{courier}
+\usepackage[skins]{tcolorbox}
+\setlength{\parindent}{0pt}
+
+\title{Kumon---Contextualizing Math}
+\author{Joshua Lin}
+\date{Kumon Center of Clovis}
+
+\begin{document}
+\maketitle
+
+\section{The Proposal}
+
+Perhaps the most common question math teachers face from students is, ``But why do we need to learn this?'' Placing math problems in the context of fields such as physics, chemistry, or economics would help to address this question in many young Kumon learners. \bigskip
+
+As an example, consider the following---normally, some Kumon questions might appear as \bigskip
+
+\begin{tcolorbox}[width=\linewidth]
+
+Evaluate the following derivatives.
+
+\[ 1) \;\; \frac{\mathrm{d}}{\mathrm{d}x} (3x-1)^3 \]
+
+\[ 2) \;\; \frac{\mathrm{d}}{\mathrm{d}x} \frac{\sin{x}}{1+\sin{x}} \] 
+
+\end{tcolorbox} 
+\bigskip
+
+And although learning the mechanics of how to evaluate a given integral is undoubtedly crucial, couching the ideas of derivatives in the context of their applications may improve interest and retention. Consider the following set of questions: \bigskip
+
+\begin{tcolorbox}[width=\linewidth]
+
+Colloquially, the idea of \textit{momentum}, $p$, can often be described as how difficult it is to stop an object in motion. In physics, changes in momentum are described in terms of a \textit{force}, $F$, which can be thought of as a ``push'' or a ``pull'' acting on an object. Given that the relation between force and momentum is $F=\mathrm{d}p/\mathrm{d}t$, evaluate the following questions on momentum (ignore consideration of units). \bigskip 
+
+1) A racecar's momentum is given by $p=5t^2 - 8t$ as it accelerates to its top speed. Find the overall force that would be necessary to act upon the racecar to give it this momentum. \bigskip
+
+2) An electron in Earth's ionosphere oscillates in the presence of a radio wave. If its momentum is given by $p = 12\sin{t} + 7\cos{2t}$, determine the force acting upon it at time $t = 1$. 
+
+\end{tcolorbox}
+\bigskip
+
+Some other ideas include 
+\begin{itemize}
+	\item Contextualizing exponential functions in terms of the cost function $C(t)=C_0 (1+r)^t$ in economics 
+	\item Contextualizing integration in terms of wave functions and probabilities, $P=\int \Psi^2 \mathrm{d}x$ ($P$ is probability, $\Psi$ is wave function) in chemistry
+	\item Contextualizing graphing functions (e.g., $y=x^2$, $y=1/x$, $y=\ln{x}$) in terms of real scientific relations/models of data 
+	\item And more! There are nearly limitless possibilities.
+\end{itemize}
+
+
+\section{Implementation}
+Given that each set of these "application" questions would need to be carefully designed to incorporate a variety of subjects/fields, it may be preferred to implement these at the end of a section (i.e., the examples with momentum might be included at the end of level N, for the section entitled ``Differentiation''). Such an implementation would also make the volume of new questions be more manageable. \bigskip 
+
+Additionally, it may be simpler to focus on implementing these types of problems into the ``higher'' levels (algebra and beyond). It seems that algebra is where math begins to become rather abstract for many students, leaving them wondering about the utility of the math that they are learning. 
+
+\section{Potential Concerns}
+
+1) ``But Kumon already implements word problems.'' Indeed, Kumon does, but many word problems often depict situations that do not explore fields in the real world. Rather than exploring the physics behind a phenomenon, for instance, an existing problem may ask the learner to determine the number of students in a classroom. In any case, this advocacy is \textit{not} to replace existing problems---new problems focusing on ideas valuable in science and industry could complement old ones, providing even more insight to children learning about math. \bigskip
+
+2) ``But the purpose of Kumon is not to teach physics, nor chemistry, nor economics, etc.'' Though that may hold truth, these new problems would \textit{not} require prior knowledge in those fields in order to be completed. They could simply be an introduction to the ways in which math connects all these phenomena. 
+
+\section{Concluding Thoughts}
+To incorporate more external concepts into Kumon could help student learners gain a deeper understanding of the interconnectedness that math supports in real life. Should this notion be implemented, there will be far fewer students confused about the importance of learning math. 
+
+\end{document}

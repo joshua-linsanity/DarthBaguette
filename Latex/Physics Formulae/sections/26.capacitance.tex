@@ -1,0 +1,56 @@
+\documentclass[../PhysicsFormulae]{subfiles}
+\begin{document}
+\subsection{Capacitors}
+Capacitors are devices that store energy in electric fields. The voltage difference between a capacitor's plates is always proportional to the charge on each plate; that is, 
+\[ q = C \Delta V \]
+The constant of proportionality is the \textit{capacitance}, in units of farads (=coulombs/volt). The permittivity can free space can conveniently be expressed in these units as $\epsilon_0 = 8.854 \; pF/m$.  \bigskip
+
+The surefire way to calculate capacitance is by integrating $\Delta V = \int \vec{E} \cdot d\vec{s}$ and applying $C=q/\Delta V$. This is how the following special cases will be solved. 
+
+\textbf{Parallel Plate Capacitor}: the capacitance is 
+\[ C = \frac{A\epsilon_0}{d} \]
+
+\textbf{Spherical Capacitor}: the capacitance is 
+\[ C = 4\pi \epsilon_0 \frac{ab}{b-a} \]
+where the two plates are of radii $a$ and $b$. \bigskip
+
+\textbf{Cylindrical Capacitor}: the capacitance is 
+\[ C = 2\pi \epsilon_0 \frac{L}{\ln(b/a)} \]
+
+\subsection{Capacitors in Series and Parallel}
+Capacitors in parallel have the same voltage drop between their plates. The actual physical appearance of the setup is irrelevant, though most commonly they will be drawn parallel to each other in a circuit. The equivalent capacitance is then
+\[ C_{eq} = C_1 + C_2 + \cdots + C_N \]
+
+Capacitors in series have the same charge buildup on their plates. The equivalent capacitance is
+\[ C_{eq} = \cfrac{1}{\frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_N}} \]
+
+\subsection{Energy Stored in an Electric Field}
+The energy stored in an electric field between two capacitor plates is the work required to move the charge $q$ from one plate to another (in effect, charging the capacitor). This can be found by integrating
+\[ dU = \Delta V dq = \frac{q}{C}dq \]
+The result is 
+\[ U = \frac{q^2}{2C} = \frac{1}{2}C \Delta V^2 = \frac{1}{2}q\Delta V \]
+The energy density is thus
+\[ u = \frac{U}{Ad} = \frac{1}{2} \epsilon_0 E^2 \]
+
+\subsection{Capacitor with Dielectric}
+The effect of a dielectric on a capacitor depends on whether the battery is connected or not. \bigskip
+
+Suppose the battery remains connected as a dielectric slides in between the capacitor plates. The potential difference remains constant, but because the electric field needs to increase, there must be more charge on the surfaces (and thus capacitance). 
+\[ E' = \frac{E}{\kappa} = \frac{q}{\kappa \epsilon_0 A} \rightarrow q' = \kappa q_0 \]
+\[ C' = \frac{q'}{\Delta V} = \kappa C \]
+Although Faraday originally showed this relation for parallel plate capacitors, any capacitor's capacitance will increase by a factor $\kappa$ when a dielectric material is slid in between with the battery connected. \bigskip
+
+Suppose the battery is disconnected. Now, as the dielectric slides in, the charge on each plate must remain constant. 
+\[ E' = \frac{E}{\kappa} \rightarrow \Delta V' = \frac{\Delta V}{\kappa} \]
+\[ C' = \frac{q}{\Delta V'} = \kappa C \] 
+
+\subsection{Dielectrics and Guass' Law}
+Consider the electric field within a capacitor with a dielectric (that fills the entire space between the plates). From Gauss' Law, 
+\[ \int \vec{E} \cdot d\vec{A} = \frac{q - q'}{\epsilon_0} \]
+where $q'$ is the magnitude of the induced electric field caused by the polarization of the insulator. Because 
+\[ E_0 - E' = \frac{E_0}{\kappa} \rightarrow \frac{q - q'}{A\epsilon_0} = \frac{q}{A \kappa \epsilon_0} \]
+it can be solved that $q' = q(1 - 1/\kappa)$ which yields, upon substitution back into Gauss' Law, 
+\[ \int \kappa \vec{E} \cdot d\vec{A} = \frac{q}{\epsilon_0} \]
+Note that $q$ is the free charge only; induced charge is accounted for by the factor of $\kappa$. 
+
+\end{document}

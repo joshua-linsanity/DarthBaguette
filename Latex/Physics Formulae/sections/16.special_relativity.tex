@@ -1,0 +1,95 @@
+\documentclass[../PhysicsFormulae.tex]{subfiles}
+\begin{document}
+\subsection{Troubles with Classical Physics}
+\subsubsection{Troubles with Time}
+The pion, a particle that can be created in an accelerator, has a much longer lifetime (before decay) than expected. 
+\subsubsection{Troubles with Length}
+From the pion's point of view, less distance has been traveled compared to what we see in the lab, due to the time difference between the frames. 
+\subsubsection{Troubles with Speed}
+Cause and effect can be violated by Newtonian physics. Consider a pitcher who throws a baseball faster than the speed of light. From the catcher's point of view, he catches the ball before it even leaves the pitcher's hand!
+\subsubsection{Troubles with Energy}
+An electron and positron move towards each other at low speeds (classically, $K\approx 0$), annihilating at contact. Radiation is released after the collision, thus increasing the internal energy of the system. The final (internal) energy is obviously greater than the initial (kinetic) energy by classical analysis, which violates conservation of energy. 
+
+\subsection{Postulates of Relativity}
+Einstein proposed two postulates of relativity:
+\begin{enumerate}
+    \item The Principle of relativity: \textit{The laws of physics are the same in all inertial reference frames.}
+    \item The Principle of the constancy of the speed of light: \textit{The speed of light in free space has the same value c in all inertial reference frames.}
+\end{enumerate}
+The speed of light is $c = 3.00 \times 10^8 \; \textrm{m/s}$ in a vacuum. It may \textit{appear} to travel slower in other media, but it is really just interacting with particles in the medium.
+
+\subsection{Consequences of the Postulates}
+\subsubsection{Time Dilation}
+In a particular frame, the proper time $\Delta t_0$ is measured by a clock at rest relative to the frame. However, a clock outside the frame measures time as 
+\[ \Delta t = \frac{\Delta t_0}{\sqrt{1-u^2/c^2}} \] 
+where $u$ is the speed of the moving frame. It can be summed up with this phrase: "moving clocks run slow."
+
+\subsubsection{Length Contraction}
+In a particular frame, the proper (or rest) length $L_0$ is measured by an observer at rest relative to the frame. However, an observer outside the frame measures the length as
+\[ L = L_0 \sqrt{1-u^2/c^2} \] 
+where $u$ is the speed of the moving frame. It can be summed up with this phrase: "moving objects grow shorter."
+
+\subsubsection{Relativistic Velocity Addition}
+A reference frame moves at $u$ relative to an outside observer, and an object moves at speed $v_0$ (along the same axis) as viewed from that frame. The observer sees said object moving at 
+\[ v = \frac{v_0 + u}{1+uv_0/c^2} \] 
+Notice that for $v_0=c$, $v=c$ as well. Light moves at the same speed regardless of frame. 
+
+\subsection{Lorentz Transformation}
+Consider two frames, $S$ and $S'$, with $S'$ moving at velocity $\vec{u}=u\hat{i}$ relative to $S$. An event has coordinates $x,y,z,t$ in S and $x',y',z',t'$ in $S'$. Then, we can relate them as:
+\[ x' = \frac{x-ut}{\sqrt{1-u^2/c^2}} = \gamma (x-ut) \]
+\[ t' = \frac{t-ux/c^2}{\sqrt{1-u^2/c^2}} \]
+where $\gamma > 1$ is the Lorentz factor and $y'=y$ and $z'=z$. Moreover, it is convenient to introduce the speed parameter $\beta = u/c$. The relation between $\beta$ and $\gamma$ is 
+\[ \beta = \sqrt{1 - \frac{1}{\gamma^2}} \]
+
+The inverse Lorentz transformations describe how to go from an event in $S'$ to one in $S$, derived by replacing $u$ with $-u$. \bigskip
+
+On the contrary, the interval transformations describe how length changes: 
+\[ \Delta x' = \frac{\Delta x - u\Delta t}{\sqrt{1-u^2/c^2}} = \gamma (\Delta x - u\Delta t) \]
+\[ \Delta t' = \frac{\Delta t - u\Delta x/c^2}{\sqrt{1 - u^2/c^2}} = \gamma (\Delta t - u\Delta x/c^2) \]
+and once again, $\Delta y' = \Delta y$ and $\Delta z' = \Delta z$. 
+
+\subsection{Transformation of Velocities}
+The primed velocities are given by
+\[ v_x' = \frac{\Delta x'}{\Delta t'} = \frac{v_x-u}{1-uv_x/c^2} \]
+\[ v_y' = \frac{\Delta y'}{\Delta t'} = \frac{v_y}{\gamma(1-uv_x/c^2)} \]
+\[ v_z' = \frac{\Delta z'}{\Delta t'} = \frac{v_z}{\gamma(1-uv_x/c^2)} \]
+Note that because of time dilation, even with no relative motion in the $y$ and $z$ directions, their respective velocities are still different. The inverse transformations are found in the same way for coordinates. 
+
+\subsection{Consequences of the Lorentz Transform}
+\subsubsection{Consequences with Time}
+\begin{enumerate}
+\item \textit{The relativity of simultaneity}: If two observers are in relative motion, they do not agree on whether two events at different locations are simultaneous. 
+\item \textit{The Doppler shift}: Because of Einstein's postulates, motion relative to a medium is an invalid concept in relativity, so only relative velocities matter in calculating the Doppler effect with light. Moreover, there is a transverse Doppler effect when a source or object move relative to each other, caused by time dilation. 
+\item \textit{The twin paradox}: if a twin stays on a stationary Earth and another goes off on an intergalactic space journey, when the latter gets back, who will be older? Isn't velocity all relative, so each person sees the other as younger? Well, no, because the spaceship twin has to accelerate and decelerate, so the trip is not symmetric. 
+\end{enumerate}
+\subsubsection{Consequences with Length}
+The Lorentz transform tells us that measurements of length are meaningless unless done simultaneously — it does no good to measure the coordinates of two ends of a rod, for instance, at different times. 
+
+\subsection{Relativistic Momentum}
+Momentum is still conserved, but what is momentum?
+\[ \vec{p} = \frac{m\vec{v}}{\sqrt{1 - v^2/c^2}} \]
+which can be split into components. The units of momenta on such tiny scales are often measured in MeV/c, which is given by the conversion
+\[ 1\;\textrm{kg}\cdot\textrm{m/s} = 1.875 \times 10^{21} \; \textrm{MeV/c} \]
+\subsection{Relativistic Energy}
+Total relativistic energy is given by
+\[ E = \frac{mc^2}{\sqrt{1-v^2/c^2}} \]
+and rest energy is given by 
+\[ E_0 = mc^2 \]
+and kinetic energy is given by 
+\[ K = E - E_0 = \frac{mc^2}{\sqrt{1-v^2/c^2}} - mc^2 \]
+The rest energies of common particles are: 
+\begin{itemize}
+\item Proton: $m_pc^2 = 938$ MeV. 
+\item Neutron: $m_nc^2 = 940$ MeV. 
+\item Electron; $m_ec^2 = 0.511$ MeV.
+\end{itemize}
+However, we must not only rethink our conceptions of momentum and energy, but mass as well. For a particle at rest, a change in energy implies a change in mass: 
+\[ \Delta m = \frac{\Delta E}{c^2} \]
+Raising the temperature (and thus internal energy) also increases mass in a similar fashion. 
+\subsection{Conservation of Total Relativistic Energy}
+Total relativistic energy is conserved in an isolated system of particles. And, the energy is related to momentum by the following: 
+\[ E^2 = (pc)^2 + (mc^2)^2 \]
+Additionally, the relation between $\beta$ and $E_0$ and $K$ is
+\[ \beta = \sqrt{1 - \left(\frac{E_0}{K+E_0}\right)^2} \]
+
+\end{document}

@@ -1,0 +1,116 @@
+\documentclass[../PhysicsFormulae.tex]{subfiles}
+\begin{document}
+
+\subsection{Torque}
+Torque is defined as $ \vec{\tau} = \vec{r} \times \vec{F} $. Here, $r\sin{\phi}$ is the \textit{lever arm}. Only net forces contribute to net torque; internal action-reaction pairs cancel out. \bigskip
+
+Gravitational torque is given by $\vec{\tau} = \vec{r}_{cm} \times M \vec{g}$ for a constant gravitational field.
+
+\subsection{Moment of Inertia}
+Moment of Inertia is defined as $I = \int r^2 \,dm$.
+
+\subsubsection{Parallel Axis Theorem}
+The relation between moments of inertia about an axis through the CM and another parallel axis is given by 
+\[I_p = I_{cm} + Md^2\]
+which holds true for planar and non-planar objects.
+
+\subsubsection{Perpendicular Axis Theorem}
+The relation between moments of inertia about two planar axes and another axis perpendicular to both of them is given by
+\[I_z = I_x + I_y\]
+which applies only to planar objects. However, non-planar objects still follow some rules:
+\[I_x + I_y + I_z = 2 \int r^2 \,dm\]
+
+\subsubsection{Radius of Gyration}
+The radius of gyration is the distance from an axis at which all mass could be concentrated without changing the moment of inertia, given by
+\[k = \sqrt{\frac{I}{M}}\]
+
+\subsubsection{Common Moments of Inertia}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Object} & \textbf{Rotational Axis} & \textbf{Moment of Inertia} \\ [0.5ex]
+\hline \hline 
+Stick & Central Diameter & $I = ML^2/12$ \\
+\hline
+Stick & End Diameter & $I=ML^2/3$\\
+\hline
+Ring & Central Axis & $I = MR^2$ \\
+\hline
+Ring & Diameter & $I = MR^2/2$ \\
+\hline
+Annular Ring & Central Axis & $I = M(R_1^2+R_2^2)/2$\\
+\hline
+Disk & Central Axis & $I = MR^2/2$\\
+\hline
+Disk & Diameter & $I = MR^2/4$\\
+\hline 
+Solid Sphere & Diameter & $I = 2MR^2/5$\\
+\hline
+Hollow Sphere & Diameter & $I = 2MR^2/3$\\
+\hline 
+Cylinder & Central Axis & $I = MR^2/2$\\
+\hline
+Cylinder & Central Diameter & $I = MR^2/4 + ML^2/12$\\
+\hline 
+Cylinder & End Diameter & $I = MR^2/4 + ML^2/3$\\
+\hline 
+Square & Central Axis & $I = ML^2/6$\\
+\hline
+Square & Midpoints & $I = ML^2/12$\\
+\hline 
+Square & Diagonal & $I = ML^2/12$\\
+\hline 
+Rectangle & Central Axis & $I = M(a^2 + b^2)/12$\\
+\hline
+\end{tabular}
+
+\subsection{Rotational Motion}
+\subsubsection{Newton's 2nd Law for Rotation}
+For rotation, Newton found that
+\[\tau_z = I\alpha_z\]
+which holds in two scenarios. Either 1) origin is inertial frame, or 2) origin is at CM. 
+
+\subsubsection{Ramp Rolling}
+For an object with $I=cMR^2$ rolling without slipping down a ramp inclined at angle $\phi$, angular acceleration is given by
+\[\alpha = \frac{g\sin{\phi}}{R(c+1)}\]
+and acceleration
+\[a = \frac{g\sin{\phi}}{c+1}\]
+from which we can find velocity and time at the bottom,
+\[v = \sqrt{\frac{2gh}{c+1}}\]
+\[t = \sqrt{\frac{2h(c+1)}{g\sin^2{\phi}}}\]
+If we impose the $a=\alpha R$ condition, we find that for no slipping to occur, for a fixed coefficient of (static) friction,
+\[\phi \leq \tan^{-1}{{\frac{\mu (c+1)}{c}}}\]
+or alternatively, for a fixed angle,
+\[\mu \geq \frac{c\tan{\phi}}{c+1}\]
+
+\subsection{Angular Momentum}
+Angular momentum is defined as $\vec{L}=\vec{r} \times \vec{p}$. Here, $r\sin{\phi}$ is known as the impact parameter. Taking derivatives of this definition yields
+\[ \frac{d\vec{L}}{dt} = \vec{\tau} \]
+which again holds true in either 1) inertial frames, or 2) CM frame. \bigskip
+
+Angular momentum can also be expressed as
+\[ L_z=I\omega_z \]
+which is \textit{not} generally a vector relation, as $L$ and $\omega$ may be different in direction. However, they have the same direction for 1) axial symmetry (about axis of rotation), or 2) planar motion (as they both can only be in the $z$ direction).\bigskip
+
+For a translating and rotating object, the full equation for angular momentum is
+\[\vec{L} = \vec{R} \times M\vec{V}_{cm} + \vec{L}_{about \; CM} = \vec{L}_{orbital} + \vec{L}_{spin}\]
+
+\subsubsection{Conservation of Angular Momentum}
+Conservation of angular momentum comes from Newton's 2nd Law for rotation, given by
+\[ \vec{\tau} = \frac{d\vec{L}}{dt} = 0 \rightarrow \vec{L} = constant \]
+
+\subsubsection{Angular Impulse}
+Angular impulse is the time integral of torque, given by 
+\[ \int \vec{\tau} \,dt = \int \,d\vec{L} = \Delta \vec{L} = \vec{J}_{\phi} \]
+For rotation about a given axis:
+\[ \vec{J}_{\phi} = \int rF \,dt = rF_{avg} \Delta t \]
+\[ \vec{J}_{\phi} = \Delta \vec{L} = I \Delta \vec{\omega} \]
+where $r$ is the lever arm. 
+
+\subsubsection{Precession}
+For a spinning top with spin angular momentum $L_s$, the angular frequency of precession is given by
+\[ \omega_p = \frac{Mgr}{L_s} \]
+and the vector relationship between these quantities is
+\[ \vec{\tau} = \vec{\omega_p} \times \vec{L} \]
+
+\end{document}
