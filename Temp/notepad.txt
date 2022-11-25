@@ -1,22 +1,13 @@
-Which days of the week do most people access studentaid.gov? (To avoid the days when the website is slowest)
+// Potential turning points
+Edna felt depressed rather than soothed after leaving them. The little glimpse of domestic harmony which had been offered her, gave her no regret, no longing. It was not a condition of life which fitted her, and she could see in it but an appalling and hopeless ennui. She was moved by a kind of commiseration for Madame Ratignolle,—a pity for that colorless existence which never uplifted its possessor beyond the region of blind contentment, in which no moment of anguish ever visited her soul, in which she would never have the taste of life’s delirium. Edna vaguely wondered what she meant by “life’s delirium.” It had crossed her thought like some unsought, extraneous impression. 
 
-Are there any downsides to using the IRS Data Retrieval Tool?
+// Central Theme
+Intro: Adam & Eve
+1) Beginning of novel: shackled with societal chains, uncertainty about why she feels os restricted. End of novel: cheated with Alcee Aerobin and Robert LeBrun, abandoned children, committed suicidedue to social repression
+ -- And the ladies, selecting with dainty and discriminating fingers and a little greedily, all declared that Mr. Pontellier was the best husband in the world. Mrs. Pontellier was forced to admit that she knew of none better. 
+ -- 
 
-What if we have more than 10 colleges on our list?
-
-SPECIAL CIRCUMSTANCE REVIEW--report changes in income
-W2 is not absolutely required
-
-Is the FAFSA first-come first-serve? (That is, could you clarify when we should submit it to maximize aid--early like this month, or late like next year?)
-
-Should we fill out CSS as soon as possible too? --> Only fill out CSS if school instructs you to do so (check website)
-
-Student Aid Report (SAR)--summary of student responses, mailed 3-5 days after
-
-Satisfactory Academic Progress (SAP) standards--lose financial aid if low GPA
-
-Pell Grant, Supplemental Education Opportunity Grant (SEOG), Federal work study
-
-pnc.com/scholarship
-
-FAFSA Assets from 2 years ago
+2) Social Repression: "Go away, for God's sake!" --> RIP the Parrot, Edna discouraged for expressing dissatisfaction
+	a. Critique of anti-feminism, argues for extension of Overton Window
+	b. Critique of link between wealth and freedom
+	c. Argues that integrity and kindness cannot excuse anti-feminism
