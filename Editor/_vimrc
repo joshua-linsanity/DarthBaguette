@@ -40,6 +40,11 @@ call plug#end()
 
 " Plugin keymaps
 nnoremap <C-n> :NERDTree<CR>
+" Start NerdTree automatically
+" autocmd VimEnter * NERDTree | wincmd p
+" Pynvim for NeoVim
+let g:python3_host_prog='C:/Users/foo/Envs/neovim3/Scripts/python.exe'
+let g:python_host_prog='C:/Users/foo/Envs/neovim/Scripts/python.exe'
 
 " BUILD SYSTEMS
 " Java - F9 to compile, F10/F11 to cycle through errors
