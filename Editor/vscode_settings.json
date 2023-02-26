@@ -1,0 +1,21 @@
+{
+    "workbench.colorTheme": "Atom One Light",
+    "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "window.autoDetectColorScheme": true,
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": 1,
+    "terminal.integrated.cursorBlinking": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-s>": false,
+        "<C-w>": false,
+        "<C-x>": false,
+        "<C-z>": false
+    },
+    "editor.wordWrap": "off"
+}
