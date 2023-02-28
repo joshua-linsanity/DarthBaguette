@@ -9,12 +9,12 @@ with open(file) as f:
 	data = f.readlines()
 
 if mode == 'light':
-	data[10] = '	TextColor = #000000\n'
-	data[11] = '	BackgroundColor = #ffffff\n'
+	data[2] = '	TextColor = #000000\n'
+	data[3] = '	BackgroundColor = #ffffff\n'
 	with open(file, 'w') as f:
 		f.writelines(data)
 elif mode == 'dark':
-	data[10] = '	TextColor = #eeeeee\n'
-	data[11] = '	BackgroundColor = #111111\n'
+	data[2] = '	TextColor = #eeeeee\n'
+	data[3] = '	BackgroundColor = #111111\n'
 	with open(file, 'w') as f:
 		f.writelines(data)
