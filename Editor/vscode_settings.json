@@ -1,6 +1,7 @@
 {
-    "workbench.colorTheme": "Atom One Light",
-    "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "workbench.colorTheme": "Nord Light",
+    "workbench.preferredLightColorTheme": "Nord Light",
+    "workbench.preferredDarkColorTheme": "Nord",
     "window.autoDetectColorScheme": true,
     "workbench.sideBar.location": "right",
     "window.zoomLevel": 1,
@@ -17,5 +18,17 @@
         "<C-x>": false,
         "<C-z>": false
     },
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "on",
+    "cSpell.userWords": [
+        "matplotlib",
+        "pyplot",
+        "scipy",
+        "sympy",
+        "Nord"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "arduino.useArduinoCli": true,
+    "[python]": {
+        "editor.formatOnType": true
+    }
 }
