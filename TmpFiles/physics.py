@@ -5,13 +5,25 @@ import scipy.stats as sc
 
 
 def main():
+    # Measured resistors
     R1, R2, R3 = 100.1, 148.1, 219
+
+    # Theoretical equivalent resistances
     R_th = equiv(R1, R2, R3)
+
+    # Measured equivalent resistances
     R_m = [468, 279, 217, 189, 47.3, 78.9, 101.4, 116.4]
     n = len(R_th)
+
+    # Print percent error of equivalent resistances
     for i in range(n):
-        e = (R_m[i] - R_th[i]) / R_th[i] * 100
-        print(e)
+        err = (R_m[i] - R_th[i]) / R_th[i] * 100
+        print(err)
+
+    # Data for max current load
+    V_th = [2.00, 2.00, 2.00]
+    V_m = [1.999, 1.999, 1.999]
+    I_th = []
 
 def equiv(R1, R2, R3):
     x = [None] * 8
