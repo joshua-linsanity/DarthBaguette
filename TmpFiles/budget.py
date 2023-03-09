@@ -7,10 +7,10 @@ total_spending = 1.4E12 / 1E9 # billions
 total_revenues = 3.6E12 / 1E9 # billions
 
 for key in spending:
-    print(f"{key}: ${(spending[key] * total_spending):.2f} bn")
+    print(f"{key} ({(spending[key] * 100):.1f}%): ${(spending[key] * total_spending):.2f} bn")
 
 print()
 
 for key in revenues:
-    print(f"{key}: ${(revenues[key] * total_revenues):.2f} bn")
+    print(f"{key}: ({(revenues[key] * 100):.1f}%): ${(revenues[key] * total_revenues):.2f} bn")
 
