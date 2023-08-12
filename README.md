@@ -1,7 +1,6 @@
 - 👋 Hi, I’m Joshua (a.k.a. @DarthBaguette), an undergrad at Princeton University
-- 👀 I’m interested in Python and Unity projects (though I have a soft spot for C)
-- 🌱 I’m currently exploring quantum physics, machine learning, and terrible math memes
-- 💞️ I’m not looking to collaborate yet, but maybe in the future!
+- 👀 I’m interested in theoretical computer science, computational physics, financial engineering
+- 🌱 I’m currently exploring C++ after years of Python and Java!
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/joshua-linsanity/)
 
 <!---
