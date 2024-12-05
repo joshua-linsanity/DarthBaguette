@@ -1,0 +1,16 @@
+\documentclass[tikz,border=2mm]{standalone} \begin{document} \begin{tikzpicture}
+    % Unit circle with center z_0
+    \draw (0,0) circle (3);
+    % Small circle around z_0
+    \draw (0,0) circle (0.5);
+    % Point z to the right of z_0, same height
+    \node at (1.5,0) {$z$};
+    % Small circle around z
+    \draw (1.5,0) circle (0.5);
+    % Horizontal line from the left edge of the unit circle, stopping at the small circles and restarting on the other side
+    \draw (-3,0) -- (-0.5,0);  % From the left to z_0's boundary
+    \draw (0.5,0) -- (1,0);     % From the right of z_0 to the left of z's circle
+    \draw (2,0) -- (3,0);       % From the right of z's circle to the edge of the unit circle
+    % Labels for z_0
+    \node at (0,0) {$z_0$};
+\end{tikzpicture} \end{document}

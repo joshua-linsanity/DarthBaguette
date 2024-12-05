@@ -1,0 +1,4 @@
+2a not rich -- fixed D
+not euclidean distance on 3 necessarily
+
+fix the taylor series crap -- in textbook (zeke), just differentiate

@@ -1,0 +1,48 @@
+schedule totals: 
+- trading prep: 7 hours
+- leetcode: 10.5 hours
+- machine learning: 10 hours
+- complex analysis: 14.5 hours
+- advanced algorithms: 17 hours
+- history of engineering: 3 hours
+
+buy list: 
+- new phone case
+- laundry bag
+- wire bundler
+- iphone charger
+- quantguide [after green book]
+- flowers for kimchi when she gets back to stanford
+- toothpaste, body wash + conditioner + face wash,
+    tide pods, dryer fabirics, 
+    [look up college supplies list??]
+- night light for kimchi
+
+social stuff:
+- schedule lunch w/ friends
+    huxley
+    jerry
+    jishnu
+    hussain
+    jaylyn
+    daeun
+- introduce to new frosh
+    fun facts: have a fuzzy lop bunny named hippo,
+        found out lactose intolerant (the hard way),
+        likes classical music
+
+tasa stuff: 
+- set up meeting w/ alex to review + catch up
+
+pdp dstuff:
+- what is this payment thing?
+- tasks for td? 
+- move out of practices early
+
+classes
+- post on ed a lot
+    don't do it anonymously
+- locate classrooms sunday/monday
+- for algos, read prev. lecture notes, then clrs
+- network hard w/ profs/tas, find out office hours
+- charge portable each night

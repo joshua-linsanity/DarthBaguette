@@ -1,0 +1,30 @@
+=== Round 1: Nick ===
+Start: 2D, 3H, 2S, 3C
+
+! Sasha D 9 Alex
+! Sasha D 9 Alex
+
+! some dave red sells
+
+Dave D @ 12
+Alex H @ 12
+Dave 5 Bid Black
+! Alex C 8 Bid Nick
+! Dave C 14 Bid Nick
+
+! Alex H 5 Sell
+! Alex C 10 Buy
+
+! Nick Spade at 6, 8
+! Nick 4 Bid Diamond
+! Nick 4 Bid Diamond
+
+=== Round 2: Helen ===
+
+! Sell 7 Club -> Nick
+    Nick has spades
+    Bought 4 clubs
+    Started <= 2 clubs
+
+! Sell 7 Club
+
