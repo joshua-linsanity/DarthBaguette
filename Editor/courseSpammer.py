@@ -3,8 +3,10 @@ import numpy as np
 import cv2
 import time
 
+print("System check: use Google Chrome")
 print("System check: dark mode disabled")
 print("System check: correct script version for Windows/Mac")
+print("System check: :syntax off in vim")
 
 def click(target_color, duration=30): # seconds
 
@@ -31,21 +33,20 @@ def click(target_color, duration=30): # seconds
         if len(matching_positions) == 0:
             print("No matching pixels found.")
             continue
-        else: 
-            print("Button pressed!")
 
         max_pos = max(matching_positions, key=lambda p: p[0] + p[1])
         max_x, max_y = max_pos[1], max_pos[0] 
         click_x = max_x - 10
         click_y = max_y - 10
-        # MAC: for bullshit screenshot vs. screen coordinate scaling reasons: 
+        # MAC: screenshot vs. screen coordinate scale is off by factor of 2
         # click_x = (max_x - 10) / 2
         # click_y = (max_y - 10) / 2
 
         pyautogui.click(click_x, click_y)
+        print(click_x, click_y)
 
-        # move cusor away so button does not change color
-        pyautogui.moveTo(100, 100)
+        # mac: move cusor away so button does not change color
+        # pyautogui.moveTo(1000, 1000, _pause=False)
 
 # Make sure no hover when checking rgb values (changes button color)
 target_color = (250, 234, 205) # surface laptop studio
