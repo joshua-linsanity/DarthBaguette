@@ -1,0 +1,28 @@
+% Author: Joshua Lin.
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+
+% Math libraries and formatting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{centernot} % For negating symbols
+\usepackage{upgreek} % For big boy tau
+
+% Plotting diagrams and images
+\usepackage{graphicx}
+\graphicspath{ {./chapters/images/} }
+\usepackage{wrapfig}
+
+% Paragraph customization
+\setlength{\parindent}{0pt}
+\usepackage[margin=1in]{geometry}
+
+% Shorter Bra-Ket notation.
+\usepackage{physics}
+
+% Theorems!
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
