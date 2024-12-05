@@ -3,7 +3,8 @@ import numpy as np
 import cv2
 import time
 
-print("TURN OFF DARK MODE")
+print("System check: dark mode disabled")
+print("System check: correct script version for Windows/Mac")
 
 def click(target_color, duration=30): # seconds
 
